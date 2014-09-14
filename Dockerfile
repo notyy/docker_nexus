@@ -8,6 +8,8 @@ RUN unzip nexus-latest-bundle.zip -d nexus
 RUN rm nexus-latest-bundle.zip
 WORKDIR /usr/local/nexus/nexus-2.9.1-02
 RUN useradd nexus
+RUN mkdir /home/nexus
+RUN chown -R nexus /home/nexus
 RUN chown -R nexus /usr/local/nexus
 
 EXPOSE 8081
