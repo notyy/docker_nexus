@@ -11,3 +11,4 @@ RUN useradd nexus
 RUN chown -R nexus /usr/local/nexus
 
 EXPOSE 8081
+ENTRYPOINT su nexus bin/nexus console
