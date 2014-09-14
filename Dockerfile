@@ -9,6 +9,5 @@ RUN rm nexus-latest-bundle.zip
 WORKDIR /usr/local/nexus/nexus-2.9.1-02
 RUN useradd nexus
 RUN chown -R nexus /usr/local/nexus
-RUN su nexus bin/nexus console
 
 EXPOSE 8081
